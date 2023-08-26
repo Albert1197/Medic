@@ -1,9 +1,10 @@
 
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
-import PatientsPage from './pages/PatientsPage'
-import Shifts from './pages/ShiftsPage'
+import PatientPage from './Pages/PatientPage'
+import ShiftsPage from './pages/ShiftsPage'
+
 
 
 
@@ -13,13 +14,10 @@ function App(){
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element= {<HomePage/>}></Route>
-          <Route path="/about" element= {<AboutPage/>}></Route>
-          <Route path="/patients" element= {<PatientsPage/>}></Route>
-          <Route path="/shifts" element= {<Shifts/>}></Route>
-
-          
-  
+          <Route path= "/" element={<HomePage />}></Route>
+          <Route path= "/about" element={<AboutPage />}></Route>
+          <Route path= "/patient" element={<PatientPage />}></Route>
+          <Route path= "/shift" element={<ShiftsPage />}></Route>
         </Routes>
       </BrowserRouter>
     </>
